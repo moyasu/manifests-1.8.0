@@ -10,124 +10,88 @@ data:
         {
           "type": "item",
           "link": "/jupyter/",
-          "text": "Notebooks",
+          "text": "开发环境",
           "icon": "book"
         },
         {
           "type": "item",
           "link": "/tensorboards/",
-          "text": "Tensorboards",
+          "text": "Tensorboard",
           "icon": "assessment"
         },
         {
           "type": "item",
           "link": "/volumes/",
-          "text": "Volumes",
+          "text": "数据卷管理",
           "icon": "device:storage"
         },
         {
           "type": "item",
-          "link": "/kserve-endpoints/",
-          "text": "Endpoints",
-          "icon": "kubeflow:models"
-        },
-        {
-          "type": "item",
           "link": "/katib/",
-          "text": "Experiments (AutoML)",
+          "text": "智能调参",
           "icon": "kubeflow:katib"
         },
         {
           "type": "item",
-          "text": "Experiments (KFP)",
+          "text": "模型实验",
           "link": "/pipeline/#/experiments",
           "icon": "done-all"
         },
         {
           "type": "item",
-          "link": "/pipeline/#/pipelines",
-          "text": "Pipelines",
-          "icon": "kubeflow:pipeline-centered"
-        },
-        {
-          "type": "item",
           "link": "/pipeline/#/runs",
-          "text": "Runs",
+          "text": "模型训练",
           "icon": "maps:directions-run"
         },
         {
           "type": "item",
-          "link": "/pipeline/#/recurringruns",
-          "text": "Recurring Runs",
-          "icon": "device:access-alarm"
+          "link": "/mlflow/",
+          "text": "训练跟踪",
+          "icon": "maps:directions-run"
+        },
+        {
+          "type": "item",
+          "link": "/pipeline/#/pipelines",
+          "text": "训练流水线",
+          "icon": "kubeflow:pipeline-centered"
+        },
+        {
+          "type": "item",
+          "link": "/kserve-endpoints/",
+          "text": "模型推理",
+          "icon": "kubeflow:models"
         },
         {
           "type": "item",
           "link": "/pipeline/#/artifacts",
-          "text": "Artifacts",
+          "text": "模型仓库",
           "icon": "editor:bubble-chart"
-        },
-        {
-          "type": "item",
-          "link": "/pipeline/#/executions",
-          "text": "Executions",
-          "icon": "av:play-arrow"
         }
       ],
       "externalLinks": [ ],
         "quickLinks": [
           {
-            "text": "Upload a pipeline",
+            "text": "上传训练流水线",
             "desc": "Pipelines",
             "link": "/pipeline/"
           },
           {
-            "text": "View all pipeline runs",
+            "text": "查看训练流水线任务",
             "desc": "Pipelines",
             "link": "/pipeline/#/runs"
           },
           {
-            "text": "Create a new Notebook server",
+            "text": "创建开发环境",
             "desc": "Notebook Servers",
             "link": "/jupyter/new?namespace=kubeflow"
           },
           {
-            "text": "View Katib Experiments",
+            "text": "查看智能调参任务",
             "desc": "Katib",
             "link": "/katib/"
           }
         ],
         "documentationItems": [
-          {
-            "text": "Getting Started with Kubeflow",
-            "desc": "Get your machine-learning workflow up and running on Kubeflow",
-            "link": "https://www.kubeflow.org/docs/started/getting-started/"
-          },
-          {
-            "text": "MiniKF",
-            "desc": "A fast and easy way to deploy Kubeflow locally",
-            "link": "https://www.kubeflow.org/docs/distributions/minikf/"
-          },
-          {
-            "text": "Microk8s for Kubeflow",
-            "desc": "Quickly get Kubeflow running locally on native hypervisors",
-            "link": "https://www.kubeflow.org/docs/distributions/microk8s/kubeflow-on-microk8s/"
-          },
-          {
-            "text": "Kubeflow on GCP",
-            "desc": "Running Kubeflow on Kubernetes Engine and Google Cloud Platform",
-            "link": "https://www.kubeflow.org/docs/gke/"
-          },
-          {
-            "text": "Kubeflow on AWS",
-            "desc": "Running Kubeflow on Elastic Container Service and Amazon Web Services",
-            "link": "https://www.kubeflow.org/docs/aws/"
-          },
-          {
-            "text": "Requirements for Kubeflow",
-            "desc": "Get more detailed information about using Kubeflow and its components",
-            "link": "https://www.kubeflow.org/docs/started/requirements/"
-          }
         ]
     }
 kind: ConfigMap
