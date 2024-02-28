@@ -190,7 +190,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: controller
-          image: gcr.io/knative-releases/knative.dev/net-istio/cmd/controller@sha256:421aa67057240fa0c56ebf2c6e5b482a12842005805c46e067129402d1751220
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/net-istio/cmd/controller:v1.8.0
           resources:
             requests:
               cpu: 30m
@@ -269,7 +269,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: webhook
-          image: gcr.io/knative-releases/knative.dev/net-istio/cmd/webhook@sha256:bfa1dfea77aff6dfa7959f4822d8e61c4f7933053874cd3f27352323e6ecd985
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/net-istio/cmd/webhook:v1.8.0
           resources:
             requests:
               cpu: 20m

@@ -590,7 +590,7 @@ spec:
       containers:
         - name: eventing-controller
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/controller@sha256:92967bab4ad8f7d55ce3a77ba8868f3f2ce173c010958c28b9a690964ad6ee9b
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/eventing/cmd/controller:v1.8.0
           resources:
             requests:
               cpu: 100m
@@ -607,7 +607,7 @@ spec:
             - name: METRICS_DOMAIN
               value: knative.dev/eventing
             - name: APISERVER_RA_IMAGE
-              value: gcr.io/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter@sha256:828db8155996e40c13b77c1d039dba98153dcfcbe272248e92866bd7b6d6a17d
+              value: dockerhub.enlightencloud.local/knative-releases/knative.dev/eventing/cmd/apiserver_receive_adapter:v1.8.0
             - name: POD_NAME
               valueFrom:
                 fieldRef:
@@ -682,7 +682,7 @@ spec:
       enableServiceLinks: false
       containers:
         - name: dispatcher
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/mtping@sha256:6d35cc98baa098fc0c5b4290859e363a8350a9dadc31d1191b0b5c9796958223
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/eventing/cmd/mtping:v1.8.0
           env:
             - name: SYSTEM_NAMESPACE
               value: ''
@@ -808,7 +808,7 @@ spec:
       containers:
         - name: eventing-webhook
           terminationMessagePolicy: FallbackToLogsOnError
-          image: gcr.io/knative-releases/knative.dev/eventing/cmd/webhook@sha256:ebf93652f0254ac56600bedf4a7d81611b3e1e7f6526c6998da5dd24cdc67ee1
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/eventing/cmd/webhook:v1.8.0
           resources:
             requests:
               cpu: 100m

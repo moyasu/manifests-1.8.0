@@ -4314,7 +4314,7 @@ metadata:
     app.kubernetes.io/name: knative-serving
     app.kubernetes.io/version: "1.10.2"
 spec:
-  image: gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:dabaecec38860ca4c972e6821d5dc825549faf50c6feb8feb4c04802f2338b8a
+  image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/queue:v1.8.0
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -4664,7 +4664,7 @@ metadata:
   annotations:
     knative.dev/example-checksum: "410041a0"
 data:
-  queue-sidecar-image: gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:dabaecec38860ca4c972e6821d5dc825549faf50c6feb8feb4c04802f2338b8a
+  queue-sidecar-image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/queue:v1.8.0
   _example: |-
     ################################
     #                              #
@@ -5536,7 +5536,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: activator
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:c2994c2b6c2c7f38ad1b85c71789bf1753cc8979926423c83231e62258837cb9
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/activator:v1.8.0
           resources:
             requests:
               cpu: 300m
@@ -5671,7 +5671,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: autoscaler
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:8319aa662b4912e8175018bd7cc90c63838562a27515197b803bdcd5634c7007
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/autoscaler:v1.8.0
           resources:
             requests:
               cpu: 100m
@@ -5785,7 +5785,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: controller
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/controller@sha256:98a2cc7fd62ee95e137116504e7166c32c65efef42c3d1454630780410abf943
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/controller:v1.8.0
           resources:
             requests:
               cpu: 100m
@@ -5893,7 +5893,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: domain-mapping
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping@sha256:f66c41ad7a73f5d4f4bdfec4294d5459c477f09f3ce52934d1a215e32316b59b
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/domain-mapping:v1.8.0
           resources:
             requests:
               cpu: 30m
@@ -5978,7 +5978,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: domainmapping-webhook
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping-webhook@sha256:7368aaddf2be8d8784dc7195f5bc272ecfe49d429697f48de0ddc44f278167aa
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/domain-mapping-webhook:v1.8.0
           resources:
             requests:
               cpu: 100m
@@ -6138,7 +6138,7 @@ spec:
       serviceAccountName: controller
       containers:
         - name: webhook
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:4305209ce498caf783f39c8f3e85dfa635ece6947033bf50b0b627983fd65953
+          image: dockerhub.enlightencloud.local/knative-releases/knative.dev/serving/cmd/webhook:v1.8.0
           resources:
             requests:
               cpu: 100m
