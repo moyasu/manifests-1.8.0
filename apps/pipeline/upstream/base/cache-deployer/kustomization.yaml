@@ -8,4 +8,5 @@ commonLabels:
   app: cache-deployer
 images:
   - name: gcr.io/ml-pipeline/cache-deployer
+    newName: dockerhub.enlightencloud.local/ml-pipeline/cache-deployer
     newTag: 2.0.3

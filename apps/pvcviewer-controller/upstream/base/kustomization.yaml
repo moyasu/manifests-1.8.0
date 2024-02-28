@@ -5,5 +5,5 @@ resources:
 
 images:
 - name: docker.io/kubeflownotebookswg/pvcviewer-controller
-  newName: docker.io/kubeflownotebookswg/pvcviewer-controller
+  newName: dockerhub.enlightencloud.local/kubeflownotebookswg/pvcviewer-controller
   newTag: v1.8.0

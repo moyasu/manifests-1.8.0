@@ -37,14 +37,20 @@ resources:
   - kfp-launcher-configmap.yaml
 images:
   - name: gcr.io/ml-pipeline/api-server
+    newName: dockerhub.enlightencloud.local/ml-pipeline/api-server
     newTag: 2.0.3
   - name: gcr.io/ml-pipeline/persistenceagent
+    newName: dockerhub.enlightencloud.local/ml-pipeline/persistenceagent
     newTag: 2.0.3
   - name: gcr.io/ml-pipeline/scheduledworkflow
+    newName: dockerhub.enlightencloud.local/ml-pipeline/scheduledworkflow
     newTag: 2.0.3
   - name: gcr.io/ml-pipeline/frontend
+    newName: dockerhub.enlightencloud.local/ml-pipeline/frontend
     newTag: 2.0.3
   - name: gcr.io/ml-pipeline/viewer-crd-controller
+    newName: dockerhub.enlightencloud.local/ml-pipeline/viewer-crd-controller
     newTag: 2.0.3
   - name: gcr.io/ml-pipeline/visualization-server
+    newName: dockerhub.enlightencloud.local/ml-pipeline/visualization-server
     newTag: 2.0.3

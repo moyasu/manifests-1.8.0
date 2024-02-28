@@ -11,7 +11,7 @@ patchesStrategicMerge:
 
 images:
 - name: docker.io/kubeflownotebookswg/profile-controller
-  newName: docker.io/kubeflownotebookswg/profile-controller
+  newName: dockerhub.enlightencloud.local/kubeflownotebookswg/profile-controller
   newTag: v1.8.0
 
 configMapGenerator:

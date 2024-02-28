@@ -9,4 +9,5 @@ resources:
   - metadata-grpc-sa.yaml
 images:
   - name: gcr.io/ml-pipeline/metadata-envoy
+    newName: dockerhub.enlightencloud.local/ml-pipeline/metadata-envoy
     newTag: 2.0.3

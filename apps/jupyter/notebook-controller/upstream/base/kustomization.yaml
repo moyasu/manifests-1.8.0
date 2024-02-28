@@ -4,5 +4,5 @@ resources:
 - ../default
 images:
 - name: docker.io/kubeflownotebookswg/notebook-controller
-  newName: docker.io/kubeflownotebookswg/notebook-controller
+  newName: dockerhub.enlightencloud.local/kubeflownotebookswg/notebook-controller
   newTag: v1.8.0

@@ -7,4 +7,5 @@ resources:
   - metadata-writer-sa.yaml
 images:
   - name: gcr.io/ml-pipeline/metadata-writer
+    newName: dockerhub.enlightencloud.local/ml-pipeline/metadata-writer
     newTag: 2.0.3
